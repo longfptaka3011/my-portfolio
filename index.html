@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="author" content="Bao Long" />
+
+  <title>バオロン／Bao Long</title>
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="static/css/style.css" as="style" />
+  <link rel="preload" href="static/js/theme.js" as="script" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="static/css/animations.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/myface.png" alt="Logo" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Devicons for technology icons -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <!-- Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <nav id="navbar" aria-label="Main navigation">
+      <div class="left-nav">
+        <a href="/" class="logo-link">
+          <h2>バオロン／Bao Long</h2>
+        </a>
+      </div>
+      <div class="right-nav">
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li>
+            <a href="#about" class="nav-link"> ABOUT </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"> SKILLS </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link"> PROJECTS </a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link"> EXPERIENCES </a>
+          </li>
+          <li>
+            <a href="#work" class="nav-link"> WORK </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link"> CONTACT </a>
+          </li>
+        </ul>
+        <button id="theme-toggle-nav" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section fade-in-element">
+      <div class="section-container">
+        <div class="home-content slide-up-element">
+          <p class="hero-pretitle animated-item">Hello, I'm バオロン</p>
+          <h1 class="hero-title animated-item">Bao Long </h1>
+          <h2 class="hero-subtitle animated-item typing-effect" style="margin-top: 1.5rem; margin-bottom: 1.5rem">
+            <span id="typing-text"></span><span class="typing-cursor">|</span>
+          </h2>
+          <div class="cta-buttons animated-item">
+            <button class="btn btn-dark btn-cv" onclick="window.open('static/pdf/HUYNHTANPHAT.pdf', '_blank')">
+              <i class="fas fa-download" aria-hidden="true"></i> Download CV
+            </button>
+            <a href="#contact" class="btn btn-dark" id="hireme">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-social-links animated-item">
+            <a href="https://github.com/longfptaka3011" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tran-nguyen-bao-long-651589338/" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home-image scale-in-element">
+          <div class="profile-image-container">
+            <img src="static/images/myface.jpg" alt="Phat Huynh\'s profile picture" class="profile-image" />
+          </div>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title">
+          <i class="fas fa-user-circle"></i> About Me
+        </h2>
+
+        <div class="about-layout slide-up-element">
+         
+
+          <!-- Right: Details (Cards + Intro Paragraph) -->
+          <div class="about-details-right">
+            <div class="about-cards-row">
+              <!-- Experience Card -->
+              <div class="info-card">
+                <div class="info-card-icon">
+                  <i class="fas fa-award"></i>
+                  <!-- Experience Icon -->
+                </div>
+                <h4 class="info-card-title">General</h4>
+                <p class="info-card-text">JLPT N3 | Passionate about building impactful products & continuous learning
+                </p>
+                <p class="info-card-text">
+                  Eager to continue learning & contributing
+                </p>
+              </div>
+
+              <!-- Education Card -->
+              <div class="info-card">
+                <div class="info-card-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                  <!-- Education Icon -->
+                </div>
+                <h4 class="info-card-title">Education</h4>
+                <p class="info-card-text">Software Engineering</p>
+                <p class="info-card-text">
+                  <img src="static/images/logo-fpt.png" style="width: 45px; height: 25px" />
+                  <a href="https://uel.edu.vn/" target="_blank" rel="noopener noreferrer">
+                    FPT University <br />
+
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="about-intro-paragraph">
+              <p>
+                I am a Software Engineering student at FPT University with a strong interest in Data Science and
+                software development. I hold an N3 level in Japanese (JLPT), and I'm passionate about building
+                high-quality products that truly meet user needs. As a fresher, I enjoy learning new technologies and
+                continuously improving my skills to bring value to both users and the development team.
+              </p>
+              <!-- Removed Hire Me button from here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title"><i class="fas fa-cogs"></i> Skills</h2>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid slide-up-element">
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-items">
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="devicon-azuresqldatabase-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>SQL</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>C#</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>FastAPI</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <!-- ✅ Added: Java -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://svgmix.com/api/svg/java.svg" alt="Java" style="width: 32px; height: 32px;" />
+                </div>
+                <div class="skill-info">
+                  <h4>Java</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+
+              <!-- ✅ Added: TypeScript -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript"
+                    style="width: 32px; height: 32px;" />
+                </div>
+                <div class="skill-info">
+                  <h4>TypeScript</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <!-- ✅ Added: Spring Boot -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://iconduck.com/icons/4468/spring-boot.svg" alt="Spring Boot"
+                    style="width: 32px; height: 32px;" />
+                </div>
+                <div class="skill-info">
+                  <h4>Spring Boot</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-items">
+
+              <!-- HTML -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>HTML</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="devicon-css3-plain colored"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>CSS</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fab fa-js-square" style="color: #f7df1e"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <!-- Streamlit -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>Streamlit</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+
+              <!-- ✅ React -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>React</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+
+              <!-- ✅ Tailwind CSS -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>Tailwind CSS</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+
+              <!-- ✅ Vue.js -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>Vue.js</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+              <!-- ✅ Node.js -->
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>Node.js</h4>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <!-- Data Skills -->
+
+          <!-- Database -->
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Database</h3>
+            <div class="skill-items">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>MySQL</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="devicon-microsoftsqlserver-plain" style="color: #cc2927"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>MSSQL Server</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="devicon-mongodb-plain" style="color: #47a248"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>MongoDB</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Applications -->
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Applications</h3>
+            <div class="skill-items">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>Git</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fab fa-github" style="color: #181717"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>GitHub</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fab fa-docker" style="color: #2496ed"></i>
+                </div>
+                <div class="skill-info">
+                  <h4>Docker</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
+                </div>
+                <div class="skill-info">
+                  <h4>JetBrains</h4>
+                  <span class="skill-level expert">Expert</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- AI & More -->
+          <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> AI & More</h3>
+            <div class="skill-items">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="static/images/logo_huggingface.png" />
+                </div>
+                <div class="skill-info">
+                  <h4>Hugging Face</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <img src="static/images/logo_LMstudio.png" />
+                </div>
+                <div class="skill-info">
+                  <h4>LM Studio</h4>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title">
+          <i class="fas fa-project-diagram"></i> Projects 
+        </h2>
+        <div class="projects-filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="analyst" role="tab" aria-selected="true">
+            <i class="fas fa-chart-line" aria-hidden="true"></i>
+            <span>Data Analyst</span>
+          </button>
+          <button class="filter-btn" data-filter="engineer" role="tab" aria-selected="false">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <span>Data Engineer</span>
+          </button>
+          <button class="filter-btn" data-filter="webdata" role="tab" aria-selected="false">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>Web Data</span>
+          </button>
+          <button class="filter-btn" data-filter="fintech" role="tab" aria-selected="false">
+            <i class="fas fa-coins" aria-hidden="true"></i>
+            <span>Fintech</span>
+          </button>
+        </div>
+        <div class="projects-grid slide-up-element">
+          <!-- Project Card 1: Stock Strategy Backtesting -->
+          <article class="project-card" data-category="fintech">
+            <div class="project-image-container">
+              <img src="static/images/stock_project.png" alt="Stock Strategy Backtesting Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Stock Strategy Backtesting</h3>
+              <p>
+                Machine Learning in Finance: A comprehensive platform for
+                backtesting stock trading strategies using historical data.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                    alt="Scikit-learn" />
+                  Scikit-learn
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                    alt="Matplotlib" />
+                  Matplotlib
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/stock-strategy-backtesting"
+                  class="btn btn-dark project-btn btn-github" target="_blank" rel="noopener">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+                <a href="https://github.com/tphathuin1802/stock-ml-trading/blob/main/main.ipynb"
+                  class="btn btn-dark project-btn" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Data Visualization with Streamlit -->
+          <article class="project-card" data-category="analyst">
+            <div class="project-image-container">
+              <img src="static/images/dataviz_project1.png" alt="Streamlit Data Visualization Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Data Visualization with Streamlit</h3>
+              <p>
+                A dynamic data visualization project using Streamlit and
+                Plotly. Served as the coding leader for the project group.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+                    alt="Streamlit" />
+                  Streamlit
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg"
+                    alt="Plotly" />
+                  Plotly
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/dataviz-wallmart" class="btn btn-dark project-btn btn-github"
+                  target="_blank" rel="noopener">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+                <a href="https://tphathuin-visualization-project-g4.streamlit.app/" class="btn btn-dark project-btn"
+                  target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Cardify system database -->
+          <article class="project-card" data-category="engineer">
+            <div class="project-image-container">
+              <img src="static/images/cardify_project.png" alt="Cardify system database" class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Cardify system database</h3>
+              <p>
+                A comprehensive database with trigger and function in
+                programmability with MSSQL Server.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                    alt="MSSQL Server" />
+                  MSSQL Server
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg" alt="PyQt6" />
+                  PyQt6
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn-dark project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4: Movie Recommendation System -->
+          <article class="project-card" data-category="analyst">
+            <div class="project-image-container">
+              <img src="static/images/movie_project.png" alt="Movie Recommendation System Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Movie Recommendation System</h3>
+              <p>
+                Movie recommendation system using machine learning and
+                collaborative filtering.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                    alt="Scikit-learn" />
+                  Scikit-learn
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+                    alt="Streamlit" />
+                  Streamlit
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/movie-recommendation"
+                  class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://movies-recommendation-1802.streamlit.app/" class="btn btn-dark project-btn"><i
+                    class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more project cards as needed -->
+          <!-- Project Card 4: Fake news detection-->
+          <article class="project-card" data-category="webdata">
+            <div class="project-image-container">
+              <img src="static/images/fake_news_project.png" alt="Fake news detection" class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Fake news detection</h3>
+              <p>
+                Fake news detection using machine learning and collaborative
+                filtering.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                    alt="Scikit-learn" />
+                  Scikit-learn
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                    alt="Matplotlib" />
+                  Matplotlib
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/fake-news-detection"
+                  class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://fake-news-detection-tphathuin1802.streamlit.app/" class="btn btn-dark project-btn"><i
+                    class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 5: Threads Sentiment Analysis -->
+          <article class="project-card" data-category="webdata">
+            <div class="project-image-container">
+              <img src="static/images/thread_project.png" alt="Threads Sentiment Analysis Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Threads Sentiment Analysis</h3>
+              <p>
+                Sentiment analysis of threads on Twitter using Python and
+                Hugging Face.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img src="static/images/logo_huggingface.png" alt="Hugging Face" />
+                  Hugging Face
+                </span>
+                <span class="tag">
+                  <img src="static/images/logo_bert.png" alt="BERT" />
+                  BERT
+                </span>
+                <span class="tag"> Transformers </span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn-dark project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spain EPU Time series forecasting -->
+          <!-- Project Card 5: Threads Sentiment Analysis -->
+          <article class="project-card" data-category="fintech">
+            <div class="project-image-container">
+              <img src="static/images/time_series.png" alt="Spain EPU Time series forecasting Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Spain EPU Time series forecasting</h3>
+              <p>
+                Time series forecasting of Spain EPU using ML&DL models and
+                classical time series models.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                    alt="Sklearn" />
+                  Sklearn
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                    alt="Tensorflow" />
+                  Tensorflow
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/spain-epu-time-series-forecasting/blob/main/main.ipynb"
+                  class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn-dark project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project pending -->
+          <!-- Project Card 5: Threads Sentiment Analysis -->
+          <article class="project-card" data-category="fintech">
+            <div class="project-image-container">
+              <img src="static/images/time_series.png" alt="Spain EPU Time series forecasting Project Preview"
+                class="project-image" />
+            </div>
+            <div class="project-card-content">
+              <h3>Spain EPU Time series forecasting</h3>
+              <p>
+                Time series forecasting of Spain EPU using ML&DL models and
+                classical time series models.
+              </p>
+              <div class="project-tags">
+                <span class="tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                    alt="Sklearn" />
+                  Sklearn
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                    alt="Tensorflow" />
+                  Tensorflow
+                </span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tphathuin1802/spain-epu-time-series-forecasting/blob/main/main.ipynb"
+                  class="btn btn-dark project-btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn btn-dark project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title">
+          <i class="fas fa-briefcase"></i> Experience
+        </h2>
+        <div class="experience-content slide-up-element">
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-company-logo">
+                <img src="static/images/logo_ielts.jpg" alt="IELTS Mentor" />
+              </div>
+              <div class="experience-details">
+                <h4>Part-time Collaborator</h4>
+                <p class="experience-company">IELTS Mentor</p>
+                <p class="experience-duration">August 2023 — December 2023</p>
+              </div>
+            </div>
+            <p class="experience-description">
+              Provided English language tutoring and mentoring services to
+              students preparing for IELTS examinations.
+            </p>
+
+            <div class="experience-achievements">
+              <h5><i class="fas fa-trophy"></i> Key Achievements</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i> Enhanced communication
+                  and interpersonal skills
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Developed
+                  customer-focused approach and service mindset
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Built personal brand and
+                  professional reputation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-company-logo">
+                <img src="static/images/logo_uel.png" alt="UEL Union" />
+              </div>
+              <div class="experience-details">
+                <h4>Union Member</h4>
+                <p class="experience-company">
+                  Union of Mathematics Economic Faculty
+                </p>
+                <p class="experience-duration">December 2023 — August 2024</p>
+              </div>
+            </div>
+            <p class="experience-description">
+              Active member of the faculty union, contributing to event
+              organization and media production.
+            </p>
+
+            <div class="experience-achievements">
+              <h5><i class="fas fa-trophy"></i> Key Achievements</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i> Organized 15+ events,
+                  workshops, and competitions to enhance students' skills
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Led media team for
+                  photography, videography, and content editing
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Increased student
+                  engagement by 40% through innovative event formats
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Collaborated with 5+
+                  departments to coordinate cross-faculty activities
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Managed social media
+                  presence with 2000+ followers growth
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-technologies">
+              <h5><i class="fas fa-code"></i> Technologies & Skills</h5>
+              <div class="tech-tags">
+                <span class="tech-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg"
+                    alt="Photoshop" />
+                  Photoshop
+                </span>
+                <span class="tech-tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg"
+                    alt="Premiere Pro" />
+                  Premiere Pro
+                </span>
+                <span class="tech-tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg"
+                    alt="After Effects" />
+                  After Effects
+                </span>
+                <span class="tech-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+
+                  Canva
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-company-logo">
+                <img src="static/images/logo_freelancer.png" alt="Upwork" />
+              </div>
+              <div class="experience-details">
+                <h4>Frelancer Data Analyst</h4>
+                <p class="experience-company">Upwork</p>
+                <p class="experience-duration">September 2024 — Present</p>
+              </div>
+            </div>
+            <p class="experience-description">
+              Data analysis, data visualization, and data engineering for
+              clients.
+            </p>
+
+            <div class="experience-achievements">
+              <h5><i class="fas fa-trophy"></i> Key Achievements</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check-circle"></i> Completed 10+ projects
+                  focusing on scalable solutions
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Consistently praised for
+                  skillfulness, quick learning, and strong communication.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Earned repeated
+                  engagements through reliability and expertise
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-technologies">
+              <h5><i class="fas fa-code"></i> Technologies & Skills</h5>
+              <div class="tech-tags">
+                <span class="tech-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python" />
+                  Python
+                </span>
+                <span class="tech-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                    alt="Pandas" />
+                  Pandas
+                </span>
+                <span class="tech-tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                    alt="Matplotlib" />
+                  Matplotlib
+                </span>
+                <span class="tech-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+                    alt="Streamlit" />
+                  Streamlit
+                </span>
+                <span class="tech-tag">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                    alt="SQL" />
+                  SQL
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- Work Section (formerly References) -->
+    <section id="work" class="references-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title"><i class="fas fa-certificate"></i> Work</h2>
+
+        <!-- Work Filters -->
+        <div class="projects-filters" role="tablist" aria-label="Work categories">
+          <button class="filter-btn active" data-filter="certification" role="tab" aria-selected="true">
+            <i class="fas fa-award" aria-hidden="true"></i>
+            <span>Certification</span>
+          </button>
+          <button class="filter-btn" data-filter="achievement" role="tab" aria-selected="false">
+            <i class="fas fa-trophy" aria-hidden="true"></i>
+            <span>Achievement</span>
+          </button>
+          <button class="filter-btn" data-filter="moment" role="tab" aria-selected="false">
+            <i class="fas fa-camera" aria-hidden="true"></i>
+            <span>Moment</span>
+          </button>
+          <button class="filter-btn" data-filter="references" role="tab" aria-selected="false">
+            <i class="fas fa-user-friends" aria-hidden="true"></i>
+            <span>References</span>
+          </button>
+        </div>
+
+        <div class="references-content slide-up-element">
+          <div class="references-grid work-grid">
+            <div class="work-track">
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_google_data_analytic.png"
+                    alt="Google Data Analytics Professional Certificate" />
+                </div>
+                <div class="reference-content">
+                  <h4>Google Data Analytics Professional Certificate</h4>
+                  <p class="reference-issuer">Coursera - Google</p>
+                  <p class="reference-date">2025</p>
+                  <p class="reference-description">
+                    Comprehensive 6-month program covering data analysis
+                    fundamentals, data cleaning, visualization, and
+                    statistical analysis using R, SQL, and Tableau.
+                  </p>
+                  <div class="reference-skills">
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">R Programming</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Data Visualization</span>
+                  </div>
+                  <div class="certificate-link">
+                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/UF2VBAANH1S1"
+                      target="_blank" rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> View
+                      Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_sql_advanced.png" alt="HackerRank SQL Advanced Certificate" />
+                </div>
+                <div class="reference-content">
+                  <h4>SQL (Advanced) Certificate</h4>
+                  <p class="reference-issuer">HackerRank</p>
+                  <p class="reference-date">2025</p>
+                  <p class="reference-description">
+                    Advanced SQL certification covering query optimization,
+                    data modeling, indexing, window functions, and pivots in
+                    SQL.
+                  </p>
+                  <div class="reference-skills">
+                    <span class="skill-tag">Advanced SQL</span>
+                    <span class="skill-tag">Query Optimization</span>
+                    <span class="skill-tag">Data Modeling</span>
+                    <span class="skill-tag">Window Functions</span>
+                    <span class="skill-tag">Database Indexing</span>
+                  </div>
+                  <div class="certificate-link">
+                    <a href="https://www.hackerrank.com/certificates/b3899cd1162d" target="_blank" rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> View
+                      Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_django.png" alt="Udemy Python Certificate" />
+                </div>
+                <div class="reference-content">
+                  <h4>Complete Python Developer Course</h4>
+                  <p class="reference-issuer">Udemy</p>
+                  <p class="reference-date">2025</p>
+                  <p class="reference-description">
+                    Comprehensive Python programming course covering
+                    fundamentals, web development, data analysis, and
+                    automation.
+                  </p>
+                  <div class="reference-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Automation</span>
+                    <span class="skill-tag">APIs</span>
+                  </div>
+                  <div class="certificate-link">
+                    <a href="https://www.udemy.com/certificate/UC-e82654a3-c071-462c-ab6b-15f0572fb5d0/" target="_blank"
+                      rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> View
+                      Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_aws.png" alt="Introduction to AWS" />
+                </div>
+                <div class="reference-content">
+                  <h4>Introduction to AWS</h4>
+                  <p class="reference-issuer">Coursera - AWS</p>
+                  <p class="reference-date">2025</p>
+                  <p class="reference-description">
+                    Introduction to AWS services, including EC2, S3, and
+                    Lambda, and hands-on experience with AWS CLI and SDK.
+                  </p>
+                  <div class="reference-skills">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">EC2</span>
+                    <span class="skill-tag">S3</span>
+                    <span class="skill-tag">Lambda</span>
+                    <span class="skill-tag">AWS CLI</span>
+                    <span class="skill-tag">AWS SDK</span>
+                  </div>
+                  <div class="certificate-link">
+                    <a href="https://coursera.org/share/2542a24640d8ceb4d5c2a9b16c38df8e" target="_blank"
+                      rel="noopener">
+                      <i class="fas fa-external-link-alt"></i> View
+                      Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Achievement placeholder -->
+              <div class="reference-card" data-category="achievement">
+                <div class="reference-image">
+                  <img src="static/images/activity_placeholder.png" alt="Achievements updating" />
+                </div>
+                <div class="reference-content">
+                  <h4>Achievements</h4>
+                  <p class="reference-description">Updating soon.</p>
+                </div>
+              </div>
+
+              <!-- Moment placeholder removed (replaced by real moments) -->
+
+              <!-- References placeholder -->
+              <div class="reference-card" data-category="references">
+                <div class="reference-image">
+                  <img src="static/images/cert_placeholder.png" alt="References updating" />
+                </div>
+                <div class="reference-content">
+                  <h4>Professional References</h4>
+                  <p class="reference-description">Updating soon.</p>
+                </div>
+              </div>
+              <!-- duplicate for smooth loop -->
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_google_data_analytic.png"
+                    alt="Google Data Analytics Professional Certificate" />
+                </div>
+                <div class="reference-content">
+                  <h4>Google Data Analytics Professional Certificate</h4>
+                  <p class="reference-issuer">Coursera - Google</p>
+                </div>
+              </div>
+              <div class="reference-card" data-category="certification">
+                <div class="reference-image">
+                  <img src="static/images/cert_sql_advanced.png" alt="HackerRank SQL Advanced Certificate" />
+                </div>
+                <div class="reference-content">
+                  <h4>SQL (Advanced) Certificate</h4>
+                  <p class="reference-issuer">HackerRank</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fade-in-element">
+      <div class="section-container">
+        <h2 class="section-title">
+          <i class="fas fa-envelope-open-text"></i> Contact Me
+        </h2>
+        <div class="contact-content-wrapper slide-up-element">
+          <div class="contact-left-column">
+            <div class="contact-image-container">
+              <img src="static/images/myface.jpg" alt="Contact illustration" class="contact-image" />
+            </div>
+            <button type="button" class="btn btn-secondary btn-visit-blog" onclick="window.open('/blog', '_blank')">
+              <i class="fas fa-rss" aria-hidden="true"></i> Visit My Blog
+            </button>
+          </div>
+
+          <form id="contactForm" class="contact-form contact-right-column" method="post">
+            <!-- CSRF token removed as this is static HTML -->
+            <div class="form-group">
+              <label for="name" class="visually-hidden">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="visually-hidden">Phone</label>
+              <input type="tel" id="phone" name="number" class="form-control" placeholder="Enter Your Phone" required />
+            </div>
+            <div class="form-group">
+              <label for="message" class="visually-hidden">Message</label>
+              <textarea id="message" name="contents" class="form-control" rows="5" placeholder="Enter Your Message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <i class="bx bx-caret-down section-scroll-arrow" onclick="scrollToNextSection(this)"></i>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h3><i class="fa-solid fa-user"></i> About Me</h3>
+          <p>
+熱意あるソフトウェア工学の学生であり、革新的なソリューションを生み出し、高品質な成果を提供するためにスキルを学び、磨くことに熱心です。          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <!-- This link might need adjustment if /blog is also static -->
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:trannguyenbaolong3011@gmail.com">trannguyenbaolong3011@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+84366392741">+84366392741</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Quy Nhon, Vietnam</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-section">
+          <h3>Follow Me</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/tran-nguyen-bao-long-651589338/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/longfptaka3011" target="_blank" rel="noopener" aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter Profile">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" target="_blank" rel="noopener" aria-label="Instagram Profile">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>
+            &copy; <span id="current-year"></span> Bao Long. All Rights
+            Reserved.
+          </p>
+        </div>
+        <div class="footer-extra-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Music Button -->
+  <button id="music-fab" class="music-fab" aria-label="Open music player" aria-controls="music-popup">
+    <i class="fas fa-music" aria-hidden="true"></i>
+  </button>
+
+  <!-- Music Popup (Top-Center) -->
+  <div id="music-popup" class="music-popup" role="dialog" aria-modal="false" aria-hidden="true">
+    <div class="music-popup-header">
+      <div class="music-title">
+        <i class="fas fa-headphones" aria-hidden="true"></i>
+        <span>My Favorite Playlist</span>
+      </div>
+      <button class="music-popup-close" id="music-popup-close" aria-label="Close music player">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="music-embed">
+      <div class="music-meta">
+        <span class="track-title">Blue Boi</span>
+        <span class="dot">•</span>
+        <a href="https://soundcloud.com/lakeyinspired" target="_blank" rel="noopener" class="artist-link">LAKEY
+          INSPIRED</a>
+      </div>
+      <iframe title="SoundCloud Player - Blue Boi" width="100%" height="220" scrolling="no" frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/lakeyinspired/blue-boi&color=%23000000&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <div class="player-actions">
+        <a class="open-sc-btn" href="https://soundcloud.com/lakeyinspired/blue-boi" target="_blank" rel="noopener">
+          <i class="fab fa-soundcloud" aria-hidden="true"></i>
+          Open in SoundCloud
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Modal (will not trigger automatically from Django messages anymore) -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Message Sent!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="successModalMessage">
+            Your message has been sent successfully. Thank you for contacting
+            me!
+          </p>
+          <!-- Default message -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="static/js/theme.js"></script>
+  <script src="static/js/animations.js"></script>
+  <script src="static/js/typing-animation.js"></script>
+  <script src="static/js/music.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // Update copyright year
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+
+    // Initialize ScrollReveal.js with new configuration
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      reset: true,
+    });
+
+    // Home Section
+    sr.reveal("#home .hero-pretitle", { delay: 200 });
+    sr.reveal("#home .hero-title", { delay: 300 });
+    sr.reveal("#home .hero-subtitle", { delay: 400 });
+    sr.reveal("#home .cta-buttons", { delay: 500 });
+    sr.reveal("#home .hero-social-links", { delay: 600 });
+    sr.reveal("#home .profile-image-container", {
+      delay: 300,
+      origin: "right",
+      distance: "100px",
+    });
+
+    // About Section
+    sr.reveal("#about .section-title", {});
+    sr.reveal("#about .about-profile-image-wrapper", {
+      origin: "left",
+      distance: "100px",
+    });
+    sr.reveal("#about .about-cards-row .info-card", { interval: 200 });
+    sr.reveal("#about .about-intro-paragraph", { delay: 200 });
+
+    // Skills Section
+    sr.reveal("#skills .section-title", {});
+    sr.reveal("#skills .skills-grid .skill-category", { interval: 150 });
+
+    // Projects Section
+    sr.reveal("#projects .section-title", {});
+    sr.reveal("#projects .projects-grid .project-card", { interval: 200 });
+
+    // Experience Section
+    sr.reveal("#experience .section-title", {});
+    sr.reveal("#experience .experience-content .experience-item", {
+      interval: 200,
+    });
+
+    // Contact Section
+    sr.reveal("#contact .section-title", {});
+    sr.reveal("#contact .contact-image-container", {
+      origin: "left",
+      distance: "100px",
+    });
+    sr.reveal("#contact .contact-form", {
+      origin: "right",
+      distance: "100px",
+      delay: 100,
+    });
+
+    /* Remove or update old ScrollReveal initializations if any
+    ScrollReveal().reveal('section#home', { delay: 200, origin: 'bottom', distance: '50px', duration: 500, easing: 'ease-in-out' });
+    ScrollReveal().reveal('section#about', { delay: 250, origin: 'bottom', distance: '50px', duration: 500, easing: 'ease-in-out' });
+    // ... and so on for other sections ...
+    */
+  </script>
+</body>
+
+</html>
